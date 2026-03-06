@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxt/content',
+    '@vueuse/nuxt',
+    'nuxt-og-image'
   ],
 
   css: ['~/assets/css/main.css'],
@@ -13,5 +16,9 @@ export default defineNuxtConfig({
 
   future: {
     compatibilityVersion: 4
+  },
+
+  routeRules: {
+    '/docs': { redirect: '/docs/getting-started', prerender: false }
   }
 })

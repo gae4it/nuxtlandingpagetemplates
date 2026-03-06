@@ -1,0 +1,207 @@
+label: SaaS
+description: Perfect for software products and developer tools
+color: blue
+icon: i-lucide-cloud
+
+hero:
+  title: Ship Your [Product]{class="text-primary"} Faster Than Ever
+  description: The all-in-one platform for modern SaaS teams. Automate workflows, monitor performance, and scale confidently — all from one beautiful dashboard.
+  links:
+    - label: Start Free Trial
+      icon: i-lucide-arrow-right
+      trailing: true
+      to: '#features'
+      size: xl
+    - label: Watch Demo
+      icon: i-lucide-play
+      size: xl
+      color: neutral
+      variant: subtle
+      to: '#'
+
+logos:
+  title: Powering teams at
+  items:
+    - name: Linear
+      icon: i-simple-icons-linear
+    - name: Vercel
+      icon: i-simple-icons-vercel
+    - name: Stripe
+      icon: i-simple-icons-stripe
+    - name: Notion
+      icon: i-simple-icons-notion
+    - name: Figma
+      icon: i-simple-icons-figma
+    - name: GitHub
+      icon: i-simple-icons-github
+
+sections:
+  - title: Automation That Works While You Sleep
+    description: Build powerful no-code workflows that trigger on any event, connect your tools, and handle the repetitive work — so your team can focus on what actually matters.
+    id: features
+    orientation: horizontal
+    features:
+      - title: Event-Driven Triggers
+        description: Any action in your stack can kick off a workflow. No polling, no delays.
+        icon: i-lucide-bolt
+      - title: 200+ Integrations
+        description: Connect Slack, HubSpot, Stripe, GitHub, and hundreds more out of the box.
+        icon: i-lucide-plug
+      - title: Zero-Code Builder
+        description: Visual workflow editor that anyone on your team can use — no engineers needed.
+        icon: i-lucide-blocks
+  - title: Observability Built For Scale
+    description: Real-time dashboards, anomaly detection, and AI-powered alerts so you always know what's happening — before your users do.
+    orientation: horizontal
+    reverse: true
+    features:
+      - title: Real-Time Metrics
+        description: Sub-second data latency across all your services and integrations.
+        icon: i-lucide-activity
+      - title: Smart Alerting
+        description: AI that learns your baseline and only alerts when something's actually wrong.
+        icon: i-lucide-bell
+      - title: Custom Dashboards
+        description: Drag-and-drop builder for the metrics your team cares about.
+        icon: i-lucide-layout-dashboard
+
+features:
+  title: Everything your team needs to ship
+  description: Stop stitching together tools. Everything you need is already here.
+  items:
+    - title: Authentication Built In
+      description: Pre-built flows for login, signup, MFA, and SSO. Connect your identity provider in minutes.
+      icon: i-lucide-shield
+    - title: Role-Based Access
+      description: Fine-grained permissions at the organization, team, and resource level.
+      icon: i-lucide-users
+    - title: Developer API
+      description: RESTful and GraphQL APIs with full OpenAPI docs and SDK for every major language.
+      icon: i-lucide-terminal
+    - title: Audit Logs
+      description: Tamper-proof logs of every action with full export for compliance.
+      icon: i-lucide-file-text
+    - title: 99.99% Uptime SLA
+      description: Multi-region infrastructure with automatic failover and zero-downtime deploys.
+      icon: i-lucide-check-circle
+    - title: Infinite Customization
+      description: White-label the entire product. Your brand, your domain, your CSS.
+      icon: i-lucide-settings
+
+stats:
+  title: Trusted at scale
+  description: Real numbers from real teams.
+  items:
+    - value: "50,000+"
+      label: Active Teams
+      description: Across 80+ countries
+    - value: "2.1B"
+      label: Events Processed Monthly
+      description: With sub-100ms median latency
+    - value: "99.99%"
+      label: Uptime Last 12 Months
+      description: As audited by a third party
+    - value: "14 min"
+      label: Average Time To First Value
+      description: From signup to first workflow
+
+testimonials:
+  headline: Loved by developers
+  title: Teams that move fast choose us
+  description: Over 50,000 teams trust our platform to run their operations.
+  items:
+    - quote: "We replaced 4 separate tools with this platform. Our ops team saved 20 hours a week. The ROI was immediate and measurable."
+      user:
+        name: Sarah Chen
+        description: CTO at TechScale Solutions
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+    - quote: "The automation builder is genuinely the best I've used. It's powerful enough for engineers but simple enough for ops managers."
+      user:
+        name: Marcus Rodriguez
+        description: VP of Engineering at DataFlow
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+    - quote: "Support is incredible. We got a custom integration built in 48 hours. Never experienced that level of partnership from a vendor."
+      user:
+        name: David Kumar
+        description: Head of Platform at SecureStack
+        avatar:
+          src: https://i.pravatar.cc/120?img=3
+    - quote: "We went from 0 to production in a single sprint. The template system and auth flows shaved weeks off our roadmap."
+      user:
+        name: Emily Zhang
+        description: Founding Engineer at ScaleForce
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+
+pricing:
+  title: Pricing that grows with you
+  description: Start free. Upgrade when you're ready. No credit card required.
+  plans:
+    - title: Starter
+      description: For small teams getting started.
+      price: "$0"
+      billing: forever free
+      features:
+        - Up to 5 team members
+        - 100 workflow runs / month
+        - 7-day log retention
+        - Community support
+      button:
+        label: Get Started Free
+        to: '#'
+        variant: outline
+    - title: Pro
+      description: For growing teams that need more power.
+      price: "$49"
+      billing: per month
+      highlight: true
+      features:
+        - Unlimited team members
+        - 50,000 workflow runs / month
+        - 90-day log retention
+        - Priority support
+        - Custom integrations
+      button:
+        label: Start 14-Day Trial
+        to: '#'
+    - title: Enterprise
+      description: For mission-critical workloads.
+      price: Custom
+      billing: contact us
+      features:
+        - Unlimited everything
+        - Dedicated infrastructure
+        - 99.99% SLA
+        - SSO / SAML
+        - Dedicated success manager
+      button:
+        label: Talk to Sales
+        to: '#'
+        variant: outline
+
+faq:
+  title: Frequently Asked Questions
+  description: Can't find what you're looking for? Chat with our team.
+  items:
+    - label: Is there a free plan?
+      content: "Yes! Our Starter plan is free forever and includes everything you need to get started. No credit card required."
+    - label: Can I cancel anytime?
+      content: "Absolutely. Cancel from your settings at any time. You won't be charged again after cancellation."
+    - label: Do you offer discounts for yearly billing?
+      content: "Yes, yearly billing saves you 20% compared to monthly. Switch at any time from your billing settings."
+    - label: What happens when I hit my workflow limit?
+      content: "We'll notify you at 80% usage. You can upgrade your plan or purchase additional runs à la carte."
+
+cta:
+  title: Ready to supercharge your operations?
+  description: Join 50,000+ teams already using our platform. Start free, no credit card needed.
+  links:
+    - label: Start Building Free
+      to: '#'
+      trailingIcon: i-lucide-arrow-right
+    - label: Book a Demo
+      to: '#'
+      variant: subtle
+      icon: i-lucide-calendar

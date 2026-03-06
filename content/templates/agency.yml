@@ -1,0 +1,206 @@
+label: Agency
+description: Ideal for creative agencies and design studios
+color: violet
+icon: i-lucide-sparkles
+
+hero:
+  title: We Build Digital Experiences That [Define The Future]{class="text-primary"}
+  description: The award-winning creative studio for bold brands who want to move faster, think bigger, and leave a lasting mark.
+  links:
+    - label: View Our Work
+      icon: i-lucide-arrow-right
+      trailing: true
+      to: '#features'
+      size: xl
+    - label: Get In Touch
+      icon: i-lucide-mail
+      size: xl
+      color: neutral
+      variant: subtle
+      to: '#cta'
+
+logos:
+  title: Trusted by world-class teams
+  items:
+    - name: Airbnb
+      icon: i-simple-icons-airbnb
+    - name: Spotify
+      icon: i-simple-icons-spotify
+    - name: Slack
+      icon: i-simple-icons-slack
+    - name: GitHub
+      icon: i-simple-icons-github
+    - name: Linear
+      icon: i-simple-icons-linear
+    - name: Vercel
+      icon: i-simple-icons-vercel
+
+sections:
+  - title: Strategy That Moves Markets
+    description: We combine deep market research with creative instinct to craft brand strategies that don't just look good — they perform. From positioning to messaging to visual identity.
+    id: features
+    orientation: horizontal
+    features:
+      - title: Brand Strategy
+        description: Market analysis, positioning, and brand architecture that sets you apart from day one.
+        icon: i-lucide-lightbulb
+      - title: Creative Direction
+        description: Art direction and visual language that creates immediate emotional resonance.
+        icon: i-lucide-palette
+      - title: Campaign Planning
+        description: Multi-channel campaigns built on data, executed with creative precision.
+        icon: i-lucide-target
+  - title: End-to-End Digital Production
+    description: From wireframes to live deployments, we own the entire digital production pipeline. Design, engineering, and QA all under one roof — with zero handoff friction.
+    orientation: horizontal
+    reverse: true
+    features:
+      - title: UX / UI Design
+        description: Research-backed interfaces that feel intuitive and convert at every touchpoint.
+        icon: i-lucide-monitor
+      - title: Web Engineering
+        description: Performant Nuxt and React applications with pixel-perfect implementation.
+        icon: i-lucide-code-2
+      - title: Launch & Grow
+        description: Post-launch analytics, A/B testing, and iterative optimization.
+        icon: i-lucide-trending-up
+
+features:
+  title: Why leading brands choose us
+  description: We're not just an agency. We're an embedded creative partner obsessed with your growth.
+  items:
+    - title: Award-Winning Design
+      description: 15+ international design awards. We set the standard, not follow it.
+      icon: i-lucide-award
+    - title: Transparent Process
+      description: Weekly updates, clear milestones, and zero black-box surprises.
+      icon: i-lucide-shield-check
+    - title: Speed That Scales
+      description: Sprint-based delivery with production-quality output from week one.
+      icon: i-lucide-zap
+    - title: Full Ownership
+      description: You own all deliverables, code, and creative assets. Always.
+      icon: i-lucide-lock
+    - title: Cross-Industry Expertise
+      description: From fintech to fashion, we've built for every sector.
+      icon: i-lucide-globe
+    - title: Post-Launch Support
+      description: 90-day hyper care included with every engagement.
+      icon: i-lucide-headphones
+
+stats:
+  title: Results that speak
+  description: Measurable impact across every engagement.
+  items:
+    - value: "150+"
+      label: Projects Delivered
+      description: Across 12 countries and 20+ industries
+    - value: "$2B+"
+      label: Client Revenue Generated
+      description: Directly attributable to our work
+    - value: "24"
+      label: Global Awards
+      description: Design and technology excellence recognition
+    - value: "98%"
+      label: Client Retention
+      description: Clients who come back for more
+
+testimonials:
+  headline: Client Stories
+  title: Real results from real partners
+  description: Don't take our word for it. Here's what our clients say.
+  items:
+    - quote: "Working with this agency was a game-changer. Our conversion rate tripled in 60 days. The team is brilliant, fast, and genuinely care about your success."
+      user:
+        name: Sarah Chen
+        description: VP of Product at Fintech Inc.
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+    - quote: "Best studio we've ever worked with. They delivered a complete brand overhaul in 4 weeks without sacrificing quality. Remarkable."
+      user:
+        name: Marcus Rodriguez
+        description: CMO at ScaleUp Corp
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+    - quote: "They think like founders, not vendors. That perspective made all the difference in how they approached our rebrand."
+      user:
+        name: Emily Zhang
+        description: CEO at Launchpad Studio
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+    - quote: "The engineering team is just as strong as the design team. Rare combination. Rare quality."
+      user:
+        name: James Wilson
+        description: CTO at DataFlow
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+
+pricing:
+  title: Simple, Transparent Pricing
+  description: No retainers, no surprises. Choose the engagement model that fits your stage.
+  plans:
+    - title: Sprint
+      description: Perfect for focused, time-boxed projects.
+      price: "$9,000"
+      billing: one-time
+      features:
+        - Brand audit and strategy document
+        - Up to 5 key deliverables
+        - 2-week delivery window
+        - 1 round of revisions
+      button:
+        label: Start a Sprint
+        to: '#cta'
+        variant: outline
+    - title: Studio
+      description: Our most popular engagement for full projects.
+      price: "$25,000"
+      billing: per project
+      highlight: true
+      features:
+        - Full brand or digital project
+        - Dedicated team of 3
+        - 8-week delivery window
+        - Unlimited revisions
+        - 90-day post-launch support
+      button:
+        label: Let's Build Together
+        to: '#cta'
+    - title: Partner
+      description: For ongoing strategic and creative partnership.
+      price: "$8,000"
+      billing: per month
+      features:
+        - 40 hours of creative capacity
+        - Weekly strategy sessions
+        - Priority support
+        - Full source code ownership
+      button:
+        label: Become a Partner
+        to: '#cta'
+        variant: outline
+
+faq:
+  title: Common Questions
+  description: Everything you need to know before we start.
+  items:
+    - label: How long does a typical project take?
+      content: "Sprints are 2 weeks. Full projects are typically 6–10 weeks depending on scope. We always define timelines clearly upfront."
+    - label: Do you work with startups?
+      content: "Yes! We love working with early-stage companies. We offer startup-friendly pricing and a lean process designed for speed."
+    - label: Who owns the final deliverables?
+      content: "You do, 100%. All code, design files, and brand assets are transferred to you at project close."
+    - label: Do you offer ongoing support?
+      content: "Yes. Our Partner plan gives you a dedicated monthly capacity. Ad-hoc support is also available as needed."
+
+cta:
+  title: Ready to build something extraordinary?
+  description: Tell us about your project. We'll get back to you within 24 hours.
+  links:
+    - label: Start a Conversation
+      to: 'mailto:hello@studio.com'
+      trailingIcon: i-lucide-arrow-right
+    - label: See Our Portfolio
+      to: '#'
+      variant: subtle
+      icon: i-lucide-external-link
