@@ -1,31 +1,77 @@
-label: Portfolio
-description: Perfect for freelancers and individual creators
+title: Portfolio
 color: emerald
-icon: i-lucide-user
-
+cta:
+  title: Let's Build Something Great
+  description: Have a project or a role in mind? I typically respond within 24 hours.
+  links:
+    - label: Send Me an Email
+      to: mailto:alex@example.com
+      trailingIcon: i-lucide-mail
+    - label: Connect on LinkedIn
+      to: "#"
+      variant: subtle
+      icon: i-simple-icons-linkedin
+description: Perfect for freelancers and individual creators
+faq:
+  title: Working Together
+  description: A few things people usually ask before we start.
+  items:
+    - label: What's your typical availability?
+      content: I take on 2–3 retainer clients at a time and book project work 4–6 weeks out. Reach out early to secure a spot.
+    - label: Do you work with early-stage startups?
+      content: Yes, it's where I do some of my best work. I love building MVPs with lean teams under real constraints.
+    - label: What time zones do you work in?
+      content: I'm based in Central Europe (CET) but regularly work with US and APAC teams. Async-first works great for me.
+    - label: Can you work on-site?
+      content: For the right project, absolutely. Let me know your location and we can figure it out.
+features:
+  title: What I bring to your team
+  description: Hard skills are table stakes. Here's what actually makes the difference.
+  items:
+    - title: Product Thinking
+      description: I ask "why" before "how". Good engineers understand the business, not just the ticket.
+      icon: i-lucide-lightbulb
+    - title: Clear Communication
+      description: Status updates, architecture explanations, and documentation that non-engineers can read.
+      icon: i-lucide-message-square
+    - title: Ownership Mindset
+      description: I don't wait to be told. I find problems before they become incidents.
+      icon: i-lucide-shield
+    - title: Fast Learner
+      description: New tech stack? Give me a weekend. I've done it more times than I can count.
+      icon: i-lucide-rocket
+    - title: Tested Instincts
+      description: 10+ years of production experience means I've made the mistakes so you don't have to.
+      icon: i-lucide-brain
+    - title: Async-Native
+      description: I thrive in remote-first environments. Timezone-friendly, documentation-heavy, meeting-light.
+      icon: i-lucide-globe
 hero:
-  title: "[Alex Rivera]{class=\"text-primary\"} — Full-Stack Engineer & Builder"
+  title: '[Alex Rivera]{class="text-primary"} — Full-Stack Engineer & Builder'
   description: I help startups and scale-ups ship production-ready software. 10+ years of experience in JavaScript, Nuxt, TypeScript, and distributed systems.
   links:
     - label: View Projects
       icon: i-lucide-arrow-right
       trailing: true
-      to: '#projects'
+      to: "#projects"
       size: xl
     - label: Download CV
       icon: i-lucide-download
       size: xl
       color: neutral
       variant: subtle
-      to: '#'
-
+      to: "#Cta"
+      trailing: false
+      target: ""
+icon: i-lucide-user
+label: Portfolio
 logos:
   title: Companies I've helped build
   items:
     - name: Google
       icon: i-simple-icons-google
-    - name: Meta
-      icon: i-simple-icons-meta
+    - name: JapanDog
+      icon: i-boxicons-dog-filled
     - name: Amazon
       icon: i-simple-icons-amazon
     - name: Cloudflare
@@ -34,7 +80,50 @@ logos:
       icon: i-simple-icons-stripe
     - name: GitHub
       icon: i-simple-icons-github
-
+pricing:
+  title: Engagement Models
+  description: Clear pricing, no surprises. All engagements include source code ownership.
+  plans:
+    - title: Consulting
+      description: Architecture reviews and technical advisory.
+      price: $250
+      billing: per hour
+      features:
+        - System architecture review
+        - Code audit with report
+        - Video call included
+        - Follow-up Q&A
+      button:
+        label: Book a Session
+        to: mailto:alex@example.com
+        variant: outline
+    - title: Retainer
+      description: My most popular option for ongoing collaboration.
+      price: $6,000
+      billing: per month
+      highlight: true
+      features:
+        - 25 hours of work per month
+        - Direct Slack access
+        - Weekly check-in call
+        - Priority response within 4h
+        - Full code ownership
+      button:
+        label: Check Availability
+        to: mailto:alex@example.com
+    - title: Project
+      description: Fixed-scope, fixed-price delivery.
+      price: Custom
+      billing: per project
+      features:
+        - Defined scope and milestones
+        - Weekly progress reports
+        - 30-day post-launch support
+        - All assets included
+      button:
+        label: Get a Quote
+        to: mailto:alex@example.com
+        variant: outline
 sections:
   - title: I Build Scalable Frontends
     description: Deeply experienced in Vue 3, Nuxt 4, and React. I architect component systems that are fast, accessible, and maintainable — even at scale. My code ships to production with zero excuses.
@@ -64,143 +153,48 @@ sections:
       - title: DevOps & Infra
         description: AWS, GCP, Docker, Kubernetes. I can ship and operate what I build.
         icon: i-lucide-cloud
-
-features:
-  title: What I bring to your team
-  description: Hard skills are table stakes. Here's what actually makes the difference.
-  items:
-    - title: Product Thinking
-      description: I ask "why" before "how". Good engineers understand the business, not just the ticket.
-      icon: i-lucide-lightbulb
-    - title: Clear Communication
-      description: Status updates, architecture explanations, and documentation that non-engineers can read.
-      icon: i-lucide-message-square
-    - title: Ownership Mindset
-      description: I don't wait to be told. I find problems before they become incidents.
-      icon: i-lucide-shield
-    - title: Fast Learner
-      description: New tech stack? Give me a weekend. I've done it more times than I can count.
-      icon: i-lucide-rocket
-    - title: Tested Instincts
-      description: 10+ years of production experience means I've made the mistakes so you don't have to.
-      icon: i-lucide-brain
-    - title: Async-Native
-      description: I thrive in remote-first environments. Timezone-friendly, documentation-heavy, meeting-light.
-      icon: i-lucide-globe
-
 stats:
   title: By the numbers
   description: 10 years of shipping things that matter.
   items:
-    - value: "10+"
+    - value: 10+
       label: Years of Experience
       description: Across frontend, backend, and infra
-    - value: "60+"
+    - value: 60+
       label: Apps Launched
       description: From MVPs to enterprise platforms
-    - value: "2M+"
+    - value: 2M+
       label: Users Served
       description: Peak concurrent users in production
-    - value: "100%"
+    - value: 100%
       label: Projects On Time
       description: I ship on schedule, every time
-
 testimonials:
   headline: References
   title: What collaborators say
   description: I let my work and the people I've worked with speak for themselves.
   items:
-    - quote: "Alex is one of the most reliable engineers I've ever worked with. Delivers on time, communicates proactively, and always brings more than what's asked."
+    - quote: Alex is one of the most reliable engineers I've ever worked with. Delivers on time, communicates proactively, and always brings more than what's asked.
       user:
         name: David Ha
         description: CTO at DataBeam
         avatar:
           src: https://i.pravatar.cc/120?img=3
-    - quote: "Hired Alex for a 3-month contract and kept extending it for 2 years. That's the best review I can give any contractor."
+    - quote: Hired Alex for a 3-month contract and kept extending it for 2 years. That's the best review I can give any contractor.
       user:
         name: Lena Müller
         description: Engineering Director at CloudScale
         avatar:
           src: https://i.pravatar.cc/120?img=9
-    - quote: "Alex rebuilt our entire frontend architecture in 8 weeks. Clean, documented, and the team ramps up on it instantly. Brilliant work."
+    - quote: Alex rebuilt our entire frontend architecture in 8 weeks. Clean, documented, and the team ramps up on it instantly. Brilliant work.
       user:
         name: Thomas Kim
         description: Head of Engineering at PropTech
         avatar:
           src: https://i.pravatar.cc/120?img=11
-    - quote: "There are senior engineers and then there's Alex. He operates several levels above the title. Highest recommendation."
+    - quote: There are senior engineers and then there's Alex. He operates several levels above the title. Highest recommendation.
       user:
         name: Rachel Torres
         description: VP Engineering at FinScale
         avatar:
           src: https://i.pravatar.cc/120?img=10
-
-pricing:
-  title: Engagement Models
-  description: Clear pricing, no surprises. All engagements include source code ownership.
-  plans:
-    - title: Consulting
-      description: Architecture reviews and technical advisory.
-      price: "$250"
-      billing: per hour
-      features:
-        - System architecture review
-        - Code audit with report
-        - Video call included
-        - Follow-up Q&A
-      button:
-        label: Book a Session
-        to: 'mailto:alex@example.com'
-        variant: outline
-    - title: Retainer
-      description: My most popular option for ongoing collaboration.
-      price: "$6,000"
-      billing: per month
-      highlight: true
-      features:
-        - 25 hours of work per month
-        - Direct Slack access
-        - Weekly check-in call
-        - Priority response within 4h
-        - Full code ownership
-      button:
-        label: Check Availability
-        to: 'mailto:alex@example.com'
-    - title: Project
-      description: Fixed-scope, fixed-price delivery.
-      price: Custom
-      billing: per project
-      features:
-        - Defined scope and milestones
-        - Weekly progress reports
-        - 30-day post-launch support
-        - All assets included
-      button:
-        label: Get a Quote
-        to: 'mailto:alex@example.com'
-        variant: outline
-
-faq:
-  title: Working Together
-  description: A few things people usually ask before we start.
-  items:
-    - label: What's your typical availability?
-      content: "I take on 2–3 retainer clients at a time and book project work 4–6 weeks out. Reach out early to secure a spot."
-    - label: Do you work with early-stage startups?
-      content: "Yes, it's where I do some of my best work. I love building MVPs with lean teams under real constraints."
-    - label: What time zones do you work in?
-      content: "I'm based in Central Europe (CET) but regularly work with US and APAC teams. Async-first works great for me."
-    - label: Can you work on-site?
-      content: "For the right project, absolutely. Let me know your location and we can figure it out."
-
-cta:
-  title: Let's Build Something Great
-  description: Have a project or a role in mind? I typically respond within 24 hours.
-  links:
-    - label: Send Me an Email
-      to: 'mailto:alex@example.com'
-      trailingIcon: i-lucide-mail
-    - label: Connect on LinkedIn
-      to: '#'
-      variant: subtle
-      icon: i-simple-icons-linkedin
