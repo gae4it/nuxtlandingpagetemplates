@@ -143,7 +143,7 @@ export const collections = {
     })
   }),
   templates: defineCollection({
-    source: 'templates/*.yml',
+    source: 'templates/*.{yml,md}',
     type: 'page',
     schema: z.object({
       label: z.string().optional(),
