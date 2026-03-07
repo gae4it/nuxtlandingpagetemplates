@@ -1,25 +1,22 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('template-saas', () =>
-  queryCollection('templates').path('/templates/saas').first()
-)
+const { data: page } = await useAsyncData("template-saas", () =>
+  queryCollection("templates").path("/templates/saas").first(),
+);
 
 if (!page.value) {
-  throw createError({ statusCode: 404, message: 'Template not found' })
+  throw createError({ statusCode: 404, message: "Template not found" });
 }
 
 useSeoMeta({
   title: `${page.value.label} Template`,
-  description: page.value.description
-})
+  description: page.value.description,
+});
 </script>
 
 <template>
   <div v-if="page">
     <!-- Hero -->
-    <UPageHero
-      :description="page.hero?.description"
-      :links="page.hero?.links"
-    >
+    <UPageHero :description="page.hero?.description" :links="page.hero?.links">
       <template #top>
         <HeroBackground />
       </template>
@@ -84,17 +81,36 @@ useSeoMeta({
         >
           <div class="flex flex-col gap-4 h-full">
             <div>
-              <UBadge v-if="plan.highlight" label="Most Popular" color="primary" variant="subtle" class="mb-3" />
-              <h3 class="text-lg font-bold text-highlighted">{{ plan.title }}</h3>
+              <UBadge
+                v-if="plan.highlight"
+                label="Most Popular"
+                color="primary"
+                variant="subtle"
+                class="mb-3"
+              />
+              <h3 class="text-lg font-bold text-highlighted">
+                {{ plan.title }}
+              </h3>
               <p class="text-sm text-muted mt-1">{{ plan.description }}</p>
             </div>
             <div class="flex items-baseline gap-1">
-              <span class="text-4xl font-bold text-highlighted">{{ plan.price }}</span>
-              <span v-if="plan.billing" class="text-sm text-muted">{{ plan.billing }}</span>
+              <span class="text-4xl font-bold text-highlighted">{{
+                plan.price
+              }}</span>
+              <span v-if="plan.billing" class="text-sm text-muted">{{
+                plan.billing
+              }}</span>
             </div>
             <ul class="flex flex-col gap-2 flex-1">
-              <li v-for="feature in plan.features" :key="feature" class="flex items-start gap-2 text-sm text-default">
-                <UIcon name="i-lucide-check" class="text-primary mt-0.5 shrink-0" />
+              <li
+                v-for="feature in plan.features"
+                :key="feature"
+                class="flex items-start gap-2 text-sm text-default"
+              >
+                <UIcon
+                  name="i-lucide-check"
+                  class="text-primary mt-0.5 shrink-0"
+                />
                 {{ feature }}
               </li>
             </ul>
@@ -102,7 +118,9 @@ useSeoMeta({
               v-if="plan.button"
               v-bind="plan.button"
               :color="plan.highlight ? 'primary' : 'neutral'"
-              :variant="plan.button.variant || (plan.highlight ? 'solid' : 'outline')"
+              :variant="
+                plan.button.variant || (plan.highlight ? 'solid' : 'outline')
+              "
               block
               class="mt-4"
             />
@@ -125,13 +143,13 @@ useSeoMeta({
           :key="index"
           variant="subtle"
           :description="testimonial.quote"
-          :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
+          :ui="{
+            description:
+              'before:content-[open-quote] after:content-[close-quote]',
+          }"
         >
           <template #footer>
-            <UUser
-              v-bind="testimonial.user"
-              size="lg"
-            />
+            <UUser v-bind="testimonial.user" size="lg" />
           </template>
         </UPageCard>
       </UPageColumns>
@@ -150,7 +168,7 @@ useSeoMeta({
         class="max-w-3xl mx-auto"
         :ui="{
           trigger: 'text-base text-highlighted',
-          body: 'text-base text-muted'
+          body: 'text-base text-muted',
         }"
       />
     </UPageSection>

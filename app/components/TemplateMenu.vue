@@ -1,27 +1,65 @@
 <script setup lang="ts">
-const { data: templates } = await useAsyncData('template-menu', () => queryCollection('templates').all())
+interface Template {
+  label?: string;
+  title: string;
+  path: string;
+  icon?: string;
+  color?: string;
+}
+
+type ValidColor =
+  | "primary"
+  | "secondary"
+  | "success"
+  | "info"
+  | "warning"
+  | "error"
+  | "neutral"
+  | undefined;
+
+const colorMap: Record<string, ValidColor> = {
+  red: "error",
+  blue: "primary",
+  green: "success",
+  yellow: "warning",
+  gray: "neutral",
+};
+
+const { data: templates, error } = await useAsyncData("template-menu", () =>
+  queryCollection("templates").all(),
+);
+
+if (error.value) {
+  console.error("Failed to load templates:", error.value);
+}
 
 const items = computed(() => {
-  const baseItems = templates.value?.map(t => ({
-    label: t.label || t.title,
-    to: t.path,
-    icon: t.icon || 'i-lucide-layout',
-    color: t.color as any
-  })) || []
+  const baseItems =
+    templates.value?.map((t: Template) => ({
+      label: t.label || t.title,
+      to: t.path,
+      icon: t.icon || "i-lucide-layout",
+      color: t.color ? colorMap[t.color] || "neutral" : undefined,
+    })) || [];
 
-  // Add the Homepage as the first item
+  // Add Home Page as first item (with `color` of type `ValidColor`)
   return [
-    { label: 'Home', to: '/', icon: 'i-lucide-home' },
-    ...baseItems
-  ]
-})
+    {
+      label: "Home",
+      to: "/",
+      icon: "i-lucide-home",
+      color: "primary" as ValidColor,
+    },
+    ...baseItems,
+  ];
+});
 
-const route = useRoute()
+const route = useRoute();
 const currentLabel = computed(() => {
-  if (route.path === '/') return 'Home'
-  const current = templates.value?.find(t => t.path === route.path)
-  return current?.label || current?.title || 'Templates'
-})
+  if (route.path === "/") return "Home";
+  const current = templates.value?.find((t: Template) => t.path === route.path);
+  return current?.label || current?.title || "Templates";
+});
 </script>
 
 <template>
@@ -41,7 +79,12 @@ const currentLabel = computed(() => {
       class="-mb-[6px] font-semibold rounded-full truncate"
       :class="[open && 'bg-primary/15']"
       :ui="{
-        trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
+        trailingIcon: [
+          'transition-transform duration-200',
+          open ? 'rotate-180' : undefined,
+        ]
+          .filter(Boolean)
+          .join(' '),
       }"
     />
   </UDropdownMenu>

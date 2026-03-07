@@ -1,38 +1,37 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('pricing', () => queryCollection('pricing').first())
+const { data: page } = await useAsyncData("pricing", () =>
+  queryCollection("pricing").first(),
+);
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.value?.seo?.title || page.value?.title;
+const description = page.value?.seo?.description || page.value?.description;
 
 useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
-})
+  ogDescription: description,
+});
 
-defineOgImageComponent('Saas')
+defineOgImageComponent("Saas");
 
-const isYearly = ref('0')
+const isYearly = ref("0");
 
 const items = ref([
   {
-    label: 'Monthly',
-    value: '0'
+    label: "Monthly",
+    value: "0",
   },
   {
-    label: 'Yearly',
-    value: '1'
-  }
-])
+    label: "Yearly",
+    value: "1",
+  },
+]);
 </script>
 
 <template>
   <div v-if="page">
-    <UPageHero
-      :title="page.title"
-      :description="page.description"
-    >
+    <UPageHero :title="page.title" :description="page.description">
       <template #links>
         <UTabs
           v-model="isYearly"
@@ -43,7 +42,7 @@ const items = ref([
           :ui="{
             list: 'ring ring-accented rounded-full',
             indicator: 'rounded-full',
-            trigger: 'w-1/2'
+            trigger: 'w-1/2',
           }"
         />
       </template>
@@ -72,10 +71,7 @@ const items = ref([
       </UPageLogos>
     </UPageSection>
 
-    <UPageSection
-      :title="page.faq.title"
-      :description="page.faq.description"
-    >
+    <UPageSection :title="page.faq.title" :description="page.faq.description">
       <UAccordion
         :items="page.faq.items"
         :unmount-on-hide="false"
@@ -84,7 +80,7 @@ const items = ref([
         class="max-w-3xl mx-auto"
         :ui="{
           trigger: 'text-base text-highlighted',
-          body: 'text-base text-muted'
+          body: 'text-base text-muted',
         }"
       />
     </UPageSection>

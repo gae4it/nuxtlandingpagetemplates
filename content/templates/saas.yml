@@ -10,14 +10,14 @@ hero:
     - label: Start Free Trial
       icon: i-lucide-arrow-right
       trailing: true
-      to: '#features'
+      to: "#features"
       size: xl
     - label: Watch Demo
       icon: i-lucide-play
       size: xl
       color: neutral
       variant: subtle
-      to: '#'
+      to: "#"
 
 logos:
   title: Powering teams at
@@ -150,7 +150,7 @@ pricing:
         - Community support
       button:
         label: Get Started Free
-        to: '#'
+        to: "#"
         variant: outline
     - title: Pro
       description: For growing teams that need more power.
@@ -165,7 +165,7 @@ pricing:
         - Custom integrations
       button:
         label: Start 14-Day Trial
-        to: '#'
+        to: "#"
     - title: Enterprise
       description: For mission-critical workloads.
       price: Custom
@@ -178,7 +178,7 @@ pricing:
         - Dedicated success manager
       button:
         label: Talk to Sales
-        to: '#'
+        to: "#"
         variant: outline
 
 faq:
@@ -199,9 +199,9 @@ cta:
   description: Join 50,000+ teams already using our platform. Start free, no credit card needed.
   links:
     - label: Start Building Free
-      to: '#'
+      to: "#"
       trailingIcon: i-lucide-arrow-right
     - label: Book a Demo
-      to: '#'
+      to: "#"
       variant: subtle
       icon: i-lucide-calendar

@@ -10,14 +10,14 @@ hero:
     - label: View Our Work
       icon: i-lucide-arrow-right
       trailing: true
-      to: '#features'
+      to: "#features"
       size: xl
     - label: Get In Touch
       icon: i-lucide-mail
       size: xl
       color: neutral
       variant: subtle
-      to: '#cta'
+      to: "#cta"
 
 logos:
   title: Trusted by world-class teams
@@ -150,7 +150,7 @@ pricing:
         - 1 round of revisions
       button:
         label: Start a Sprint
-        to: '#cta'
+        to: "#cta"
         variant: outline
     - title: Studio
       description: Our most popular engagement for full projects.
@@ -165,7 +165,7 @@ pricing:
         - 90-day post-launch support
       button:
         label: Let's Build Together
-        to: '#cta'
+        to: "#cta"
     - title: Partner
       description: For ongoing strategic and creative partnership.
       price: "$8,000"
@@ -177,7 +177,7 @@ pricing:
         - Full source code ownership
       button:
         label: Become a Partner
-        to: '#cta'
+        to: "#cta"
         variant: outline
 
 faq:
@@ -198,9 +198,9 @@ cta:
   description: Tell us about your project. We'll get back to you within 24 hours.
   links:
     - label: Start a Conversation
-      to: 'mailto:hello@studio.com'
+      to: "mailto:hello@studio.com"
       trailingIcon: i-lucide-arrow-right
     - label: See Our Portfolio
-      to: '#'
+      to: "#"
       variant: subtle
       icon: i-lucide-external-link
