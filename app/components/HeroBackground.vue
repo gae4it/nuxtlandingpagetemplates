@@ -1,17 +1,17 @@
 <script setup lang="ts">
-const { isLoading } = useLoadingIndicator();
+const { isLoading } = useLoadingIndicator()
 
-const appear = ref(false);
-const appeared = ref(false);
+const appear = ref(false)
+const appeared = ref(false)
 
 onMounted(() => {
   setTimeout(() => {
-    appear.value = true;
+    appear.value = true
     setTimeout(() => {
-      appeared.value = true;
-    }, 1000);
-  }, 0);
-});
+      appeared.value = true
+    }, 1000)
+  }, 0)
+})
 </script>
 
 <template>
@@ -19,7 +19,7 @@ onMounted(() => {
     class="absolute w-full -top-px transition-all text-primary shrink-0"
     :class="[
       isLoading ? 'animate-pulse' : appear ? '' : 'opacity-0',
-      appeared ? 'duration-[400ms]' : 'duration-1000',
+      appeared ? 'duration-[400ms]' : 'duration-1000'
     ]"
   >
     <svg
@@ -31,11 +31,7 @@ onMounted(() => {
       <mask id="path-1-inside-1_414_5526" fill="white">
         <path d="M0 0H1440V181H0V0Z" />
       </mask>
-      <path
-        d="M0 0H1440V181H0V0Z"
-        fill="url(#paint0_linear_414_5526)"
-        fill-opacity="0.22"
-      />
+      <path d="M0 0H1440V181H0V0Z" fill="url(#paint0_linear_414_5526)" fill-opacity="0.22" />
       <path
         d="M0 2H1440V-2H0V2Z"
         fill="url(#paint1_linear_414_5526)"

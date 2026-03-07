@@ -8,7 +8,7 @@ cta:
       to: mailto:alex@example.com
       trailingIcon: i-lucide-mail
     - label: Connect on LinkedIn
-      to: "#"
+      to: '#'
       variant: subtle
       icon: i-simple-icons-linkedin
 description: Perfect for freelancers and individual creators
@@ -53,16 +53,16 @@ hero:
     - label: View Projects
       icon: i-lucide-arrow-right
       trailing: true
-      to: "#projects"
+      to: '#projects'
       size: xl
     - label: Download CV
       icon: i-lucide-download
       size: xl
       color: neutral
       variant: subtle
-      to: "#Cta"
+      to: '#Cta'
       trailing: false
-      target: ""
+      target: ''
 icon: i-lucide-user
 label: Portfolio
 logos:

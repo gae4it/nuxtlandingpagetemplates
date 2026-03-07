@@ -1,25 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    "@nuxt/ui",
-    "@nuxt/image",
-    "@nuxt/content",
-    "@vueuse/nuxt",
-    "nuxt-og-image",
-    "@nuxt/eslint",
+    '@nuxt/ui',
+    '@nuxt/image',
+    '@nuxt/content',
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    '@nuxt/eslint'
   ],
 
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
 
-  compatibilityDate: "2025-07-15",
+  compatibilityDate: '2025-07-15',
 
   devtools: { enabled: true },
 
   future: {
-    compatibilityVersion: 4,
+    compatibilityVersion: 4
   },
 
   routeRules: {
-    "/docs": { redirect: "/docs/getting-started", prerender: false },
-  },
-});
+    '/docs': { redirect: '/docs/getting-started', prerender: false }
+  }
+})

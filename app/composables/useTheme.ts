@@ -1,14 +1,14 @@
 // app/composables/useTheme.ts
 
-import { themes, type ThemeName } from "~/cms/themes";
+import { themes, type ThemeName } from '~/cms/themes'
 
 export const useTheme = (themeName: ThemeName) => {
-  const theme = themes[themeName];
+  const theme = themes[themeName]
 
   if (!theme) {
-    console.warn(`Theme "${themeName}" not found, falling back to saas`);
-    return themes.saas;
+    console.warn(`Theme "${themeName}" not found, falling back to saas`)
+    return themes.saas
   }
 
-  return theme;
-};
+  return theme
+}

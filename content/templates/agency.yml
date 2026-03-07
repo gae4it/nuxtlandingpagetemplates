@@ -10,14 +10,14 @@ hero:
     - label: View Our Work
       icon: i-lucide-arrow-right
       trailing: true
-      to: "#features"
+      to: '#features'
       size: xl
     - label: Get In Touch
       icon: i-lucide-mail
       size: xl
       color: neutral
       variant: subtle
-      to: "#cta"
+      to: '#cta'
 
 logos:
   title: Trusted by world-class teams
@@ -92,16 +92,16 @@ stats:
   title: Results that speak
   description: Measurable impact across every engagement.
   items:
-    - value: "150+"
+    - value: '150+'
       label: Projects Delivered
       description: Across 12 countries and 20+ industries
-    - value: "$2B+"
+    - value: '$2B+'
       label: Client Revenue Generated
       description: Directly attributable to our work
-    - value: "24"
+    - value: '24'
       label: Global Awards
       description: Design and technology excellence recognition
-    - value: "98%"
+    - value: '98%'
       label: Client Retention
       description: Clients who come back for more
 
@@ -110,7 +110,7 @@ testimonials:
   title: Real results from real partners
   description: Don't take our word for it. Here's what our clients say.
   items:
-    - quote: "Working with this agency was a game-changer. Our conversion rate tripled in 60 days. The team is brilliant, fast, and genuinely care about your success."
+    - quote: 'Working with this agency was a game-changer. Our conversion rate tripled in 60 days. The team is brilliant, fast, and genuinely care about your success.'
       user:
         name: Sarah Chen
         description: VP of Product at Fintech Inc.
@@ -122,13 +122,13 @@ testimonials:
         description: CMO at ScaleUp Corp
         avatar:
           src: https://i.pravatar.cc/120?img=7
-    - quote: "They think like founders, not vendors. That perspective made all the difference in how they approached our rebrand."
+    - quote: 'They think like founders, not vendors. That perspective made all the difference in how they approached our rebrand.'
       user:
         name: Emily Zhang
         description: CEO at Launchpad Studio
         avatar:
           src: https://i.pravatar.cc/120?img=5
-    - quote: "The engineering team is just as strong as the design team. Rare combination. Rare quality."
+    - quote: 'The engineering team is just as strong as the design team. Rare combination. Rare quality.'
       user:
         name: James Wilson
         description: CTO at DataFlow
@@ -141,7 +141,7 @@ pricing:
   plans:
     - title: Sprint
       description: Perfect for focused, time-boxed projects.
-      price: "$9,000"
+      price: '$9,000'
       billing: one-time
       features:
         - Brand audit and strategy document
@@ -150,11 +150,11 @@ pricing:
         - 1 round of revisions
       button:
         label: Start a Sprint
-        to: "#cta"
+        to: '#cta'
         variant: outline
     - title: Studio
       description: Our most popular engagement for full projects.
-      price: "$25,000"
+      price: '$25,000'
       billing: per project
       highlight: true
       features:
@@ -165,10 +165,10 @@ pricing:
         - 90-day post-launch support
       button:
         label: Let's Build Together
-        to: "#cta"
+        to: '#cta'
     - title: Partner
       description: For ongoing strategic and creative partnership.
-      price: "$8,000"
+      price: '$8,000'
       billing: per month
       features:
         - 40 hours of creative capacity
@@ -177,7 +177,7 @@ pricing:
         - Full source code ownership
       button:
         label: Become a Partner
-        to: "#cta"
+        to: '#cta'
         variant: outline
 
 faq:
@@ -185,22 +185,22 @@ faq:
   description: Everything you need to know before we start.
   items:
     - label: How long does a typical project take?
-      content: "Sprints are 2 weeks. Full projects are typically 6–10 weeks depending on scope. We always define timelines clearly upfront."
+      content: 'Sprints are 2 weeks. Full projects are typically 6–10 weeks depending on scope. We always define timelines clearly upfront.'
     - label: Do you work with startups?
-      content: "Yes! We love working with early-stage companies. We offer startup-friendly pricing and a lean process designed for speed."
+      content: 'Yes! We love working with early-stage companies. We offer startup-friendly pricing and a lean process designed for speed.'
     - label: Who owns the final deliverables?
-      content: "You do, 100%. All code, design files, and brand assets are transferred to you at project close."
+      content: 'You do, 100%. All code, design files, and brand assets are transferred to you at project close.'
     - label: Do you offer ongoing support?
-      content: "Yes. Our Partner plan gives you a dedicated monthly capacity. Ad-hoc support is also available as needed."
+      content: 'Yes. Our Partner plan gives you a dedicated monthly capacity. Ad-hoc support is also available as needed.'
 
 cta:
   title: Ready to build something extraordinary?
   description: Tell us about your project. We'll get back to you within 24 hours.
   links:
     - label: Start a Conversation
-      to: "mailto:hello@studio.com"
+      to: 'mailto:hello@studio.com'
       trailingIcon: i-lucide-arrow-right
     - label: See Our Portfolio
-      to: "#"
+      to: '#'
       variant: subtle
       icon: i-lucide-external-link

@@ -1,16 +1,16 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData("template-portfolio", () =>
-  queryCollection("templates").path("/templates/portfolio").first(),
-);
+const { data: page } = await useAsyncData('template-portfolio', () =>
+  queryCollection('templates').path('/templates/portfolio').first()
+)
 
 if (!page.value) {
-  throw createError({ statusCode: 404, message: "Template not found" });
+  throw createError({ statusCode: 404, message: 'Template not found' })
 }
 
 useSeoMeta({
   title: `${page.value.label} Template`,
-  description: page.value.description,
-});
+  description: page.value.description
+})
 </script>
 
 <template>
@@ -54,17 +54,9 @@ useSeoMeta({
     </UPageSection>
 
     <!-- Stats -->
-    <UPageSection
-      v-if="page.stats"
-      :title="page.stats.title"
-      :description="page.stats.description"
-    >
+    <UPageSection v-if="page.stats" :title="page.stats.title" :description="page.stats.description">
       <dl class="grid grid-cols-2 gap-8 sm:grid-cols-4">
-        <div
-          v-for="stat in page.stats.items"
-          :key="stat.label"
-          class="flex flex-col gap-1"
-        >
+        <div v-for="stat in page.stats.items" :key="stat.label" class="flex flex-col gap-1">
           <dt class="text-4xl font-bold text-highlighted tracking-tight">
             {{ stat.value }}
           </dt>
@@ -104,8 +96,7 @@ useSeoMeta({
           variant="subtle"
           :description="testimonial.quote"
           :ui="{
-            description:
-              'before:content-[open-quote] after:content-[close-quote]',
+            description: 'before:content-[open-quote] after:content-[close-quote]'
           }"
         >
           <template #footer>
@@ -118,12 +109,7 @@ useSeoMeta({
     <USeparator />
 
     <!-- CTA -->
-    <UPageCTA
-      v-if="page.cta"
-      v-bind="page.cta"
-      variant="naked"
-      class="overflow-hidden"
-    >
+    <UPageCTA v-if="page.cta" v-bind="page.cta" variant="naked" class="overflow-hidden">
       <LazyStarsBg />
     </UPageCTA>
   </div>

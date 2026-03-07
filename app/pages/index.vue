@@ -1,27 +1,21 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData("index", () =>
-  queryCollection("index").first(),
-);
+const { data: page } = await useAsyncData('index', () => queryCollection('index').first())
 
-const title = page.value?.seo?.title || page.value?.title;
-const description = page.value?.seo?.description || page.value?.description;
+const title = page.value?.seo?.title || page.value?.title
+const description = page.value?.seo?.description || page.value?.description
 
 useSeoMeta({
-  titleTemplate: "",
+  titleTemplate: '',
   title,
   ogTitle: title,
   description,
-  ogDescription: description,
-});
+  ogDescription: description
+})
 </script>
 
 <template>
   <div v-if="page">
-    <UPageHero
-      :title="page.title"
-      :description="page.description"
-      :links="page.hero.links"
-    >
+    <UPageHero :title="page.title" :description="page.description" :links="page.hero.links">
       <template #top>
         <HeroBackground />
       </template>
@@ -45,10 +39,7 @@ useSeoMeta({
       <ImagePlaceholder />
     </UPageSection>
 
-    <UPageSection
-      :title="page.features.title"
-      :description="page.features.description"
-    >
+    <UPageSection :title="page.features.title" :description="page.features.description">
       <UPageGrid>
         <UPageCard
           v-for="(item, index) in page.features.items"
@@ -72,8 +63,7 @@ useSeoMeta({
           variant="subtle"
           :description="testimonial.quote"
           :ui="{
-            description:
-              'before:content-[open-quote] after:content-[close-quote]',
+            description: 'before:content-[open-quote] after:content-[close-quote]'
           }"
         >
           <template #footer>

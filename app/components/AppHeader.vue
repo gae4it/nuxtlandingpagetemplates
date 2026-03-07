@@ -1,25 +1,25 @@
 <script setup lang="ts">
-const route = useRoute();
+const route = useRoute()
 
 const items = computed(() => [
   {
-    label: "Docs",
-    to: "/docs",
-    active: route.path.startsWith("/docs"),
+    label: 'Docs',
+    to: '/docs',
+    active: route.path.startsWith('/docs')
   },
   {
-    label: "Pricing",
-    to: "/pricing",
+    label: 'Pricing',
+    to: '/pricing'
   },
   {
-    label: "Blog",
-    to: "/blog",
+    label: 'Blog',
+    to: '/blog'
   },
   {
-    label: "Changelog",
-    to: "/changelog",
-  },
-]);
+    label: 'Changelog',
+    to: '/changelog'
+  }
+])
 </script>
 
 <template>
@@ -66,14 +66,7 @@ const items = computed(() => [
 
       <USeparator class="my-6" />
 
-      <UButton
-        label="Sign in"
-        color="neutral"
-        variant="subtle"
-        to="/login"
-        block
-        class="mb-3"
-      />
+      <UButton label="Sign in" color="neutral" variant="subtle" to="/login" block class="mb-3" />
       <UButton label="Sign up" color="neutral" to="/signup" block />
     </template>
   </UHeader>

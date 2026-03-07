@@ -1,16 +1,16 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData("template-saas", () =>
-  queryCollection("templates").path("/templates/saas").first(),
-);
+const { data: page } = await useAsyncData('template-saas', () =>
+  queryCollection('templates').path('/templates/saas').first()
+)
 
 if (!page.value) {
-  throw createError({ statusCode: 404, message: "Template not found" });
+  throw createError({ statusCode: 404, message: 'Template not found' })
 }
 
 useSeoMeta({
   title: `${page.value.label} Template`,
-  description: page.value.description,
-});
+  description: page.value.description
+})
 </script>
 
 <template>
@@ -94,12 +94,8 @@ useSeoMeta({
               <p class="text-sm text-muted mt-1">{{ plan.description }}</p>
             </div>
             <div class="flex items-baseline gap-1">
-              <span class="text-4xl font-bold text-highlighted">{{
-                plan.price
-              }}</span>
-              <span v-if="plan.billing" class="text-sm text-muted">{{
-                plan.billing
-              }}</span>
+              <span class="text-4xl font-bold text-highlighted">{{ plan.price }}</span>
+              <span v-if="plan.billing" class="text-sm text-muted">{{ plan.billing }}</span>
             </div>
             <ul class="flex flex-col gap-2 flex-1">
               <li
@@ -107,10 +103,7 @@ useSeoMeta({
                 :key="feature"
                 class="flex items-start gap-2 text-sm text-default"
               >
-                <UIcon
-                  name="i-lucide-check"
-                  class="text-primary mt-0.5 shrink-0"
-                />
+                <UIcon name="i-lucide-check" class="text-primary mt-0.5 shrink-0" />
                 {{ feature }}
               </li>
             </ul>
@@ -118,9 +111,7 @@ useSeoMeta({
               v-if="plan.button"
               v-bind="plan.button"
               :color="plan.highlight ? 'primary' : 'neutral'"
-              :variant="
-                plan.button.variant || (plan.highlight ? 'solid' : 'outline')
-              "
+              :variant="plan.button.variant || (plan.highlight ? 'solid' : 'outline')"
               block
               class="mt-4"
             />
@@ -144,8 +135,7 @@ useSeoMeta({
           variant="subtle"
           :description="testimonial.quote"
           :ui="{
-            description:
-              'before:content-[open-quote] after:content-[close-quote]',
+            description: 'before:content-[open-quote] after:content-[close-quote]'
           }"
         >
           <template #footer>
@@ -156,11 +146,7 @@ useSeoMeta({
     </UPageSection>
 
     <!-- FAQ -->
-    <UPageSection
-      v-if="page.faq"
-      :title="page.faq.title"
-      :description="page.faq.description"
-    >
+    <UPageSection v-if="page.faq" :title="page.faq.title" :description="page.faq.description">
       <UAccordion
         :items="page.faq.items"
         :unmount-on-hide="false"
@@ -168,7 +154,7 @@ useSeoMeta({
         class="max-w-3xl mx-auto"
         :ui="{
           trigger: 'text-base text-highlighted',
-          body: 'text-base text-muted',
+          body: 'text-base text-muted'
         }"
       />
     </UPageSection>
@@ -176,12 +162,7 @@ useSeoMeta({
     <USeparator />
 
     <!-- CTA -->
-    <UPageCTA
-      v-if="page.cta"
-      v-bind="page.cta"
-      variant="naked"
-      class="overflow-hidden"
-    >
+    <UPageCTA v-if="page.cta" v-bind="page.cta" variant="naked" class="overflow-hidden">
       <LazyStarsBg />
     </UPageCTA>
   </div>

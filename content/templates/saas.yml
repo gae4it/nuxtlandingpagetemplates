@@ -10,14 +10,14 @@ hero:
     - label: Start Free Trial
       icon: i-lucide-arrow-right
       trailing: true
-      to: "#features"
+      to: '#features'
       size: xl
     - label: Watch Demo
       icon: i-lucide-play
       size: xl
       color: neutral
       variant: subtle
-      to: "#"
+      to: '#'
 
 logos:
   title: Powering teams at
@@ -92,16 +92,16 @@ stats:
   title: Trusted at scale
   description: Real numbers from real teams.
   items:
-    - value: "50,000+"
+    - value: '50,000+'
       label: Active Teams
       description: Across 80+ countries
-    - value: "2.1B"
+    - value: '2.1B'
       label: Events Processed Monthly
       description: With sub-100ms median latency
-    - value: "99.99%"
+    - value: '99.99%'
       label: Uptime Last 12 Months
       description: As audited by a third party
-    - value: "14 min"
+    - value: '14 min'
       label: Average Time To First Value
       description: From signup to first workflow
 
@@ -110,7 +110,7 @@ testimonials:
   title: Teams that move fast choose us
   description: Over 50,000 teams trust our platform to run their operations.
   items:
-    - quote: "We replaced 4 separate tools with this platform. Our ops team saved 20 hours a week. The ROI was immediate and measurable."
+    - quote: 'We replaced 4 separate tools with this platform. Our ops team saved 20 hours a week. The ROI was immediate and measurable.'
       user:
         name: Sarah Chen
         description: CTO at TechScale Solutions
@@ -122,13 +122,13 @@ testimonials:
         description: VP of Engineering at DataFlow
         avatar:
           src: https://i.pravatar.cc/120?img=7
-    - quote: "Support is incredible. We got a custom integration built in 48 hours. Never experienced that level of partnership from a vendor."
+    - quote: 'Support is incredible. We got a custom integration built in 48 hours. Never experienced that level of partnership from a vendor.'
       user:
         name: David Kumar
         description: Head of Platform at SecureStack
         avatar:
           src: https://i.pravatar.cc/120?img=3
-    - quote: "We went from 0 to production in a single sprint. The template system and auth flows shaved weeks off our roadmap."
+    - quote: 'We went from 0 to production in a single sprint. The template system and auth flows shaved weeks off our roadmap.'
       user:
         name: Emily Zhang
         description: Founding Engineer at ScaleForce
@@ -141,7 +141,7 @@ pricing:
   plans:
     - title: Starter
       description: For small teams getting started.
-      price: "$0"
+      price: '$0'
       billing: forever free
       features:
         - Up to 5 team members
@@ -150,11 +150,11 @@ pricing:
         - Community support
       button:
         label: Get Started Free
-        to: "#"
+        to: '#'
         variant: outline
     - title: Pro
       description: For growing teams that need more power.
-      price: "$49"
+      price: '$49'
       billing: per month
       highlight: true
       features:
@@ -165,7 +165,7 @@ pricing:
         - Custom integrations
       button:
         label: Start 14-Day Trial
-        to: "#"
+        to: '#'
     - title: Enterprise
       description: For mission-critical workloads.
       price: Custom
@@ -178,7 +178,7 @@ pricing:
         - Dedicated success manager
       button:
         label: Talk to Sales
-        to: "#"
+        to: '#'
         variant: outline
 
 faq:
@@ -186,11 +186,11 @@ faq:
   description: Can't find what you're looking for? Chat with our team.
   items:
     - label: Is there a free plan?
-      content: "Yes! Our Starter plan is free forever and includes everything you need to get started. No credit card required."
+      content: 'Yes! Our Starter plan is free forever and includes everything you need to get started. No credit card required.'
     - label: Can I cancel anytime?
       content: "Absolutely. Cancel from your settings at any time. You won't be charged again after cancellation."
     - label: Do you offer discounts for yearly billing?
-      content: "Yes, yearly billing saves you 20% compared to monthly. Switch at any time from your billing settings."
+      content: 'Yes, yearly billing saves you 20% compared to monthly. Switch at any time from your billing settings.'
     - label: What happens when I hit my workflow limit?
       content: "We'll notify you at 80% usage. You can upgrade your plan or purchase additional runs à la carte."
 
@@ -199,9 +199,9 @@ cta:
   description: Join 50,000+ teams already using our platform. Start free, no credit card needed.
   links:
     - label: Start Building Free
-      to: "#"
+      to: '#'
       trailingIcon: i-lucide-arrow-right
     - label: Book a Demo
-      to: "#"
+      to: '#'
       variant: subtle
       icon: i-lucide-calendar

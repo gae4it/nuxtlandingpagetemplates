@@ -1,0 +1,10 @@
+diff --git a/node_modules/@vue/shared/package.json b/node_modules/@vue/shared/package.json
+--- a/node_modules/@vue/shared/package.json
++++ b/node_modules/@vue/shared/package.json
+@@ -18,6 +18,5 @@
+       "module": "./dist/shared.esm-bundler.js",
+       "import": "./dist/shared.esm-bundler.js",
+       "require": "./index.js"
+     },
+-    "./*": "./*"
+   },

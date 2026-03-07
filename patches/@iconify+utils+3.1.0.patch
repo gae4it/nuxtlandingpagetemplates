@@ -1,0 +1,10 @@
+diff --git a/node_modules/@iconify/utils/package.json b/node_modules/@iconify/utils/package.json
+--- a/node_modules/@iconify/utils/package.json
++++ b/node_modules/@iconify/utils/package.json
+@@ -92,5 +92,4 @@
+     "./lib/svg/trim": "./lib/svg/trim.js",
+     "./lib/svg/url": "./lib/svg/url.js",
+-    "./lib/svg/viewbox": "./lib/svg/viewbox.js",
+-    "./*": "./*"
++    "./lib/svg/viewbox": "./lib/svg/viewbox.js"
+   },

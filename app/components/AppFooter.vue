@@ -1,70 +1,70 @@
 <script setup lang="ts">
 const columns = [
   {
-    label: "Resources",
+    label: 'Resources',
     children: [
       {
-        label: "Help center",
+        label: 'Help center'
       },
       {
-        label: "Docs",
+        label: 'Docs'
       },
       {
-        label: "Roadmap",
+        label: 'Roadmap'
       },
       {
-        label: "Changelog",
-      },
-    ],
+        label: 'Changelog'
+      }
+    ]
   },
   {
-    label: "Features",
+    label: 'Features',
     children: [
       {
-        label: "Affiliates",
+        label: 'Affiliates'
       },
       {
-        label: "Portal",
+        label: 'Portal'
       },
       {
-        label: "Jobs",
+        label: 'Jobs'
       },
       {
-        label: "Sponsors",
-      },
-    ],
+        label: 'Sponsors'
+      }
+    ]
   },
   {
-    label: "Company",
+    label: 'Company',
     children: [
       {
-        label: "About",
+        label: 'About'
       },
       {
-        label: "Pricing",
+        label: 'Pricing'
       },
       {
-        label: "Careers",
+        label: 'Careers'
       },
       {
-        label: "Blog",
-      },
-    ],
-  },
-];
+        label: 'Blog'
+      }
+    ]
+  }
+]
 
-const toast = useToast();
+const toast = useToast()
 
-const email = ref("");
-const loading = ref(false);
+const email = ref('')
+const loading = ref(false)
 
 function onSubmit() {
-  loading.value = true;
+  loading.value = true
 
   toast.add({
-    title: "Subscribed!",
-    description: "You've been subscribed to our newsletter.",
-  });
+    title: 'Subscribed!',
+    description: "You've been subscribed to our newsletter."
+  })
 }
 </script>
 
@@ -77,24 +77,10 @@ function onSubmit() {
         <UFooterColumns :columns="columns">
           <template #right>
             <form @submit.prevent="onSubmit">
-              <UFormField
-                name="email"
-                label="Subscribe to our newsletter"
-                size="lg"
-              >
-                <UInput
-                  v-model="email"
-                  type="email"
-                  class="w-full"
-                  placeholder="Enter your email"
-                >
+              <UFormField name="email" label="Subscribe to our newsletter" size="lg">
+                <UInput v-model="email" type="email" class="w-full" placeholder="Enter your email">
                   <template #trailing>
-                    <UButton
-                      type="submit"
-                      size="xs"
-                      color="neutral"
-                      label="Subscribe"
-                    />
+                    <UButton type="submit" size="xs" color="neutral" label="Subscribe" />
                   </template>
                 </UInput>
               </UFormField>
@@ -105,9 +91,7 @@ function onSubmit() {
     </template>
 
     <template #left>
-      <p class="text-muted text-sm">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
-      </p>
+      <p class="text-muted text-sm">Built with Nuxt UI • © {{ new Date().getFullYear() }}</p>
     </template>
 
     <template #right>
