@@ -21,5 +21,9 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
+  },
+
+  nitro: {
+    preset: 'vercel'
   }
 })
