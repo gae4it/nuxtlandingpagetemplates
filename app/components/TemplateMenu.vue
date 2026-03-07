@@ -1,7 +1,6 @@
 <script setup lang="ts">
 interface Template {
-  label?: string
-  title: string
+  label: string
   path: string
   icon?: string
   color?: string
@@ -25,18 +24,31 @@ const colorMap: Record<string, ValidColor> = {
   gray: 'neutral'
 }
 
-const { data: templates, error } = await useAsyncData('template-menu', () =>
-  queryCollection('templates').all()
-)
-
-if (error.value) {
-  console.error('Failed to load templates:', error.value)
-}
+const templates: Template[] = [
+  {
+    label: 'SaaS Platform',
+    path: '/templates/saas',
+    icon: 'i-heroicons-cpu-chip',
+    color: 'blue'
+  },
+  {
+    label: 'Creative Agency',
+    path: '/templates/agency',
+    icon: 'i-heroicons-paint-brush',
+    color: 'orange'
+  },
+  {
+    label: 'Portfolio',
+    path: '/templates/portfolio',
+    icon: 'i-heroicons-user',
+    color: 'gray'
+  }
+]
 
 const items = computed(() => {
   const baseItems =
-    templates.value?.map((t: Template) => ({
-      label: t.label || t.title,
+    templates.map((t: Template) => ({
+      label: t.label,
       to: t.path,
       icon: t.icon || 'i-lucide-layout',
       color: t.color ? colorMap[t.color] || 'neutral' : undefined
@@ -57,8 +69,8 @@ const items = computed(() => {
 const route = useRoute()
 const currentLabel = computed(() => {
   if (route.path === '/') return 'Home'
-  const current = templates.value?.find((t: Template) => t.path === route.path)
-  return current?.label || current?.title || 'Templates'
+  const current = templates.find((t: Template) => t.path === route.path)
+  return current?.label || 'Templates'
 })
 </script>
 
