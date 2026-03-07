@@ -5,6 +5,7 @@ diff --git a/node_modules/@vue/shared/package.json b/node_modules/@vue/shared/pa
        "module": "./dist/shared.esm-bundler.js",
        "import": "./dist/shared.esm-bundler.js",
        "require": "./index.js"
-     },
+-    },
 -    "./*": "./*"
++    }
    },
