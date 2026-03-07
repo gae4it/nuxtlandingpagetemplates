@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const route = useRoute()
-const currentTemplate = computed(() => (route.params.name as string) || 'saas')
+const currentTemplate = computed(() => {
+  const match = templates.find((t) => route.path.startsWith(`/templates/${t.id}`))
+  return match?.id || 'saas'
+})
 
 const templates = [
   {
